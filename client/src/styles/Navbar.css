@@ -1,0 +1,169 @@
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: #15202B;
+  overflow: hidden;
+  width: 100%;
+  max-width: 810px;
+  border: 1px solid #2d3748;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.nav-item {
+  flex: 1;
+  padding: 20px 40px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-right: 1px solid #2d3748;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.nav-item:last-child {
+  border-right: none;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.nav-item:first-child {
+  border-radius: 10px 0px 0px 0px;
+}
+
+.nav-item.active {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.nav-item:not(.active):hover {
+  background-color: #2d3748;
+}
+
+.new-post-btn {
+  background-color: #1da1f2;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.new-post-btn:hover {
+  background-color: #1a8cd8 !important;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a202c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  color: white;
+  border: 1px solid #2d3748;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: white;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: #ff8c00;
+}
+
+.post-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2d3748;
+  border-radius: 5px;
+  background-color: #2d3748;
+  color: white;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.post-textarea:focus {
+  outline: none;
+  border-color: #ff8c00;
+}
+
+.modal-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn, .submit-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  background: #2d3748;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #4a5568;
+}
+
+.submit-btn {
+  background: #1da1f2;
+  color: white;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #1a8cd8;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

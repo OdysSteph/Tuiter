@@ -1,0 +1,248 @@
+/* Original Profile Card Styles */
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the profile card */
+  width: 100%;
+  padding-top: 25px; /* Same as navbar-wrapper */
+}
+
+.profile-card {
+  text-decoration: none;
+  background-color: #1a202c;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+  width: 90%; /* Proportional to container */
+  max-width: 280px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #2d3748;
+  box-sizing: border-box;
+}
+
+.profile-card:hover {
+  background-color: #2d3748;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-container {
+  width: 50px;
+  height: 50px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a5568;
+}
+
+.profile-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4a5568;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.user-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+}
+
+.user-username {
+  font-size: 0.9em;
+  color: #a0aec0;
+}
+
+.clickable-username {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.clickable-username:hover {
+  color: #ff8c00;
+}
+
+.user-stats {
+  font-size: 0.85em;
+  color: #a0aec0;
+  display: flex;
+  gap: 15px;
+}
+
+.new-post-button {
+  background-color: #ff8c00;
+  width: 90%; /* Proportional to container */
+  max-width: 280px;
+  height: 3rem;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.new-post-button:hover {
+  background-color: #e07600;
+}
+
+/* Clickable stats */
+.clickable-stat {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.clickable-stat:hover {
+  color: #ff8c00;
+  text-decoration-color: #ff8c00;
+}
+
+/* Connections Modal */
+.connections-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.connections-modal {
+  background-color: #1a202c;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid #2d3748;
+}
+
+.connections-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #2d3748;
+}
+
+.connections-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+.connections-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.loading-connections {
+  text-align: center;
+  color: #a0aec0;
+  padding: 40px;
+}
+
+.no-connections {
+  text-align: center;
+  color: #a0aec0;
+  padding: 40px;
+}
+
+.connection-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.connection-item:hover {
+  background-color: #2d3748;
+}
+
+.connection-avatar-container {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.connection-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a5568;
+}
+
+.connection-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4a5568;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+}
+
+.connection-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.connection-name {
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+}
+
+.connection-username {
+  font-size: 0.85em;
+  color: #a0aec0;
+}

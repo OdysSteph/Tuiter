@@ -1,0 +1,154 @@
+.timeline-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #15202B;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.timeline-card {
+  background-color: #1a202c;
+  border-radius: 0px 0px 8px 8px;
+  height: 750px;
+  padding: 20px;
+  width: 100%;
+  max-width: 810px; /* Matches navbar width */
+  color: white;
+  border: 1px solid #2d3748;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.timeline-header {
+  font-size: 1.8em;
+  font-weight: bold;  
+  color: white;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.search-bar-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background-color: #2d3748;
+  color: white;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff8c00;
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.3);
+}
+
+.timeline-post {
+  background-color: #161d29;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-author {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  margin: 0;
+}
+
+.post-handle {
+  font-size: 0.9em;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.follow-button {
+  background-color: #2d3748;
+  color: white;
+  border: 1px solid #4a5568;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.follow-button:hover {
+  background-color: #4a5568;
+}
+
+.post-content {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #cbd5e0;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.no-results-message {
+  text-align: center;
+  color: #a0aec0;
+  padding: 20px;
+  font-style: italic;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  gap: 5px;
+}
+
+.pagination button {
+  background-color: #2d3748;
+  color: #cbd5e0;
+  border: 1px solid #4a5568;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #4a5568;
+  color: white;
+}
+
+.pagination button.active {
+  background-color: #ff8c00;
+  color: white;
+  border-color: #ff8c00;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading, .error, .no-posts {
+  text-align: center;
+  padding: 20px;
+  color: #a0aec0;
+}
